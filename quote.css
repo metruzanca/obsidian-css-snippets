@@ -1,0 +1,19 @@
+
+/* Remove annoying margin on quotes */
+blockquote {
+  margin-left: 0 !important;
+}
+
+/* Add cool quote character to indicate this is a quote */
+/* Idea from https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme */
+blockquote:before {
+  content: '“';
+  position: relative;
+  left: 0px;
+  top: 0;
+  color: var(--text-accent);
+  font-size: 2rem;
+  font-family: Source Code Pro, monospace;
+  line-height: 1em;
+  font-weight: 700;
+}

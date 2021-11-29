@@ -1,0 +1,81 @@
+
+/* Tag styling credit to https://github.com/bennyxguo/Obsidian-Obsidianite/ */
+
+.cm-s-obsidian .CodeMirror-line span.cm-hashtag {
+  position: relative;
+  color: var(--text-accent);
+  opacity: 1;
+  font-family: var(--tag-font-family);
+  font-style: italic;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-formatting-hashtag {
+  color: var(--text-faint);
+}
+
+/** tags */
+
+a.tag {
+  background: #100e18;
+  color: #7a7a8c;
+  color: var(--text-accent);
+  white-space: nowrap;
+  border: 2px solid #28242f;
+  border-radius: 2rem;
+  padding: 0.05rem 0.5rem;
+  font-family: var(--tag-font-family);
+  font-size: 0.8rem;
+  background: linear-gradient(to bottom, rgba(25, 22, 33) 0%, rgba(25, 22, 33) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0 0;
+  text-decoration: none;
+  transition: all 400ms ease;
+}
+
+a.tag:hover {
+  color: var(--text-normal) !important;
+  border-color: var(--text-accent);
+  opacity: 1;
+  background-size: 4px 50px;
+}
+
+h1 a.tag,
+h2 a.tag,
+h3 a.tag,
+h4 a.tag,
+h5 a.tag,
+h6 a.tag {
+  font-size: inherit !important;
+}
+
+
+
+/* Custom Tag Colors */
+
+* {
+  --yt-draft: rgba(255, 153, 0, 0.808);
+}
+
+/* Undo red-graphite style */
+.cm-s-obsidian .CodeMirror-line span.cm-tag-ytdraft:not(.cm-formatting-hashtag),
+.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta.cm-tag-ytdraft
+{
+  background-color: transparent;
+}
+.cm-s-obsidian span.cm-hashtag-begin {
+  padding-left: 0;
+}
+
+a.tag[href*='#yt/draft'] {
+  background-color: var(--yt-draft);
+  color: #fff;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-ytdraft:not(.cm-formatting-hashtag) {
+  color: var(--yt-draft);
+}
+
+

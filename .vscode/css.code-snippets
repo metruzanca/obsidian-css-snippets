@@ -1,0 +1,16 @@
+{
+	"Obsidian Colored Tag": {
+		"prefix": "tag",
+		"body": [
+			"a.tag[href*='#${1:todo}'] {",
+			"  background-color: var(--${1:todo});",
+			"  color: #fff;",
+			"}",
+			".cm-s-obsidian .CodeMirror-line span.cm-tag-${1:todo}:not(.cm-formatting-hashtag) {",
+			"  color: var(--${1:todo});",
+			"}",
+			""
+		],
+		"description": "Obsidian Colored Tag"
+	}
+}

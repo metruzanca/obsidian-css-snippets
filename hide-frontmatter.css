@@ -1,0 +1,7 @@
+.frontmatter-container {
+  display: none;
+}
+
+.show-metadata .frontmatter-container {
+  display: block;
+}
